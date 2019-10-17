@@ -1,0 +1,124 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <!--<script language="javascript" type="text/javascript" src="./libraries/d3.v5.min.js"></script>-->
+     <script language="javascript" type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  </head>
+  
+  <body>
+    
+    <!--<div class=container>-->
+    <!--  <div class=rectangle></div>-->
+    <!--  <div class=met><b></b></div>-->
+    <!--  <div class=pagetitle><b></b></div>-->
+    <!--</div>-->
+    
+    <div class = descriptionBox>
+      <div class = description>
+      
+        <div class=description1>
+          <p class = titleLarge1>Sculptures<br>of Scale</p>
+          <p class = text>The Metropolitan Museum of Art has made nearly 500,000 pieces of art publicly available through its online collection. Anyone with access to a browser can now view the collection’s images virtually. However, when we view these images in a virtual space, we lose the sense of scale we get when we visit the museum in person. This visualization explores a subset of the Met’s online collection in which scale plays a large role in the viewer expereince : Sculptures. </p>
+        </div>
+        <div class = description2>
+          <p class = title>Get Started</p>
+          <p class = text>Scultpures of Scale groups the Met’s online collection of sculptures into three categories: large, medium, and small. Scroll through each category to compare sculptures side by side, keeping height constant. When you’ve selected a sculpture from each category, the area below will display the sculptures by their relative heights.</p>
+        </div>
+      
+      </div>
+      
+        <!--<form>-->
+        <!--  <p> Enter your height </p>-->
+        <!--  Feet: <input type="text" id="feet"><br>-->
+        <!--  Inches: <input type="text" id="inches"><br>-->
+        <!--  <input type="submit" value="Enter">-->
+        <!--</form>-->
+      
+    </div>
+    
+    <div class="section1">
+      <p class = titleLarge>Constant <br> Width</p>
+    </div>
+  
+    <div class = noScale> 
+      <div class = images> 
+      
+      
+      <div class = small>
+        <div class=smallLabel id="overviewLabel">Small Sculptures <br> 10–50cm</div>
+        <img src="resized_clipped_tranparent_png/DP256401.png" class = overviewSmallImage height = "350px">
+        <button class=next onclick="changeSmall()">Next small sculpture</button>
+      </div>
+      
+      <div class="divider1" id="divider"></div>
+      
+      
+      <div class ="medium">
+        <div class=mediumLabel id="overviewLabel">Medium Sculptures <br> 50–100cm</div>
+        <img src="resized_clipped_tranparent_png/DP250574.png" class = overviewMediumImage height = "350px">
+        <button class=next onclick="changeMedium()">Next medium sculpture</button>
+      </div>
+      
+      <div class="divider2" id="divider"></div>
+      
+      
+      <div class = large>
+        <div class=largeLabel id="overviewLabel">Large Sculptures <br> 100–200cm</div>
+        <img src="resized_clipped_tranparent_png/DP248142.png" class = overviewLargeImage height = "350px">
+        <button class=next onclick="changeLarge()">Next large sculpture</button>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    </div>
+    
+    <div class=sculptureLabel>
+      <div class= sculptureDescriptionSmall></div>
+      <div class= sculptureDescriptionMed></div>
+      <div class= sculptureDescriptionLarge></div>
+    </div>
+    
+    <div class = "scaled">
+    
+    <!--<div class="divider1" id="divider"></div>-->
+    <!--<div class="divider2" id="divider"></div>-->
+    
+    <div class="section2">
+      <p class = titleLarge>Relative <br> Height</p>
+    </div>
+    
+      <div class = 'scaleBarContainer'>
+        <div class = 'scaleBar'></div>
+        <div class = 'scaleLabel'>5 ft, 5 in</div>
+      </div>
+      <div class = small>
+        <img src="resized_clipped_tranparent_png/DP256401.png" class = mainSmallImage>
+      </div>
+
+      <div class = medium>
+        <img src="resized_clipped_tranparent_png/DP250574.png" class = mainMediumImage>
+      </div>
+      
+      <div class = large>
+        <img src="resized_clipped_tranparent_png/DP248142.png" class = mainLargeImage>
+    </div>
+    
+    <div class=quant>
+      <div id=scatterplot>
+        <!--<div class=legend>-->
+        <!--  <div class="legendMen"></div>-->
+        <!--  <div class="legendWomen"></div>-->
+        <!--  <div class="legendBoth"></div>-->
+        <!--  <div class="legendText"><b>Men<br/><br/>Women<br/><br/>Both</b>-->
+        <!--</div>-->
+      </div>
+    </div>
+    
+  <script src="sculptures2.js"></script>
+  </body>
+
+</html>

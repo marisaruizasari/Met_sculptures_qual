@@ -1,0 +1,466 @@
+/**{*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*.container {*/
+/*  position: fixed;*/
+/*  z-index: 9999;*/
+/*}*/
+
+/*.rectangle {*/
+/*  height: 35px;*/
+/*  width: 1300px;*/
+/*  background-color: black;*/
+/*  position: absolute;*/
+
+/*}*/
+
+
+.met {
+  height: .2%;
+  width: 2%;
+  color: rgb(100, 100, 100);
+  font-family: georgia, garamond, serif;
+  font-size: 16px;
+  position: relative;
+  top: 5px;
+  left: 10px;
+
+}
+
+.pagetitle {
+  height: 5px;
+  width: 500px;
+  color: black;
+  font-family: georgia, garamond, serif;
+  font-size: 15px;
+  position: absolute;
+  top: 10px;
+  left: 60px;
+
+}
+
+.descriptionBox {
+    position: relative;
+    top: 105px;
+    left: 50px;
+    background-color: black;
+}
+
+.description {
+    float: left;
+    margin-bottom: 200px;
+    top: 10px;
+    height: 100px;
+    width: 1100px;
+    color: #D4D3CB;
+    font-family: georgia, garamond, serif;
+    font-size: 11px;
+}
+
+.description1 {
+  float:left;
+  width: 60%;
+}
+.description2 {
+    /*margin-top: 40px;*/
+    height: 100px;
+    width: 35%;
+    color: #D4D3CB;
+    font-family: georgia, garamond, serif;
+    font-size: 11px;
+    float: right;
+}
+
+.title {
+    color: #C4A479;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.section1 {
+    position: relative;
+    top: 0px;
+    left: 60px;
+    width:100%;
+    height: 150px;
+    /*background-color: grey;*/
+    z-index: 999;
+}
+
+.section2 {
+    position: relative;
+    top: -150px;
+    left: -130px;
+    width:100%;
+    height: 150px;
+    /*background-color: grey;*/
+    z-index: 999;
+}
+
+.text {
+  color: rgb(200,200,200);
+  font-family: georgia, garamond, serif;
+  font-size: 11.5px;
+  line-height: 14.5px;
+  
+}
+
+.titleLarge1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    /*padding-top: 5px;*/
+    /*margin-top: 5px;*/
+    /*margin-bottom: 60px;*/
+    margin-right: 40px;
+    margin-top: -10px;
+    float: left;
+}
+
+.titleLarge {
+    color: #C4A479;
+    font-size: 40px;
+    font-weight: bold;
+    /*padding-top: 5px;*/
+    /*margin-top: 5px;*/
+    /*margin-bottom: 60px;*/
+    margin-right: 50px;
+    float: left;
+    margin-top: 110px;
+}
+
+
+.noScale {
+    position: absolute;
+    padding: 50px;
+    height: 680px;
+    width: 100%;
+    background-color: rgb(15,15,15);
+    top: 300px;
+}
+
+.overviewSmallImage, .overviewMediumImage, .overviewLargeImage {
+    display: inline-block;
+    position:relative;
+    align-content: center;
+    top: 10px;
+    margin-top: 10px;
+    /*max-width: 100%;*/
+    /*max-height: 100%*/
+}
+
+
+.sculptureLabel {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  top: 1685px;
+  background-color: black;
+  margin: 0px;
+  padding:0px;
+  border-top-width: 3px;
+  border-top-style: inset;
+  border-top-color: white;
+  padding-top: 80px;
+}
+
+.sculptureDescriptionSmall {
+    float:left;
+    margin-left:-35px;
+    margin-top:-50px;
+    width:200px;
+    color: white;
+    font-family: georgia, garamond, serif;
+    font-size: 11px;
+    line-height: 13px;
+
+}
+
+.sculptureDescriptionMed {
+    float: left;
+    margin-left: 130px;
+    margin-top: -50px;
+    width: 200px;
+    color: white;
+    font-family: georgia, garamond, serif;
+    font-size: 11px;
+    line-height: 13px;
+
+}
+
+.sculptureDescriptionLarge {
+    float: right;
+    margin-right: 100px;
+    margin-top: -50px;
+    width: 200px;
+    color: white;
+    font-family: georgia, garamond, serif;
+    font-size: 11px;
+    line-height: 13px;
+
+}
+
+#overviewLabel {
+    color: rgb(80,80,80);
+    font-family: georgia, garamond, serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.smallLabel {
+  float: left;
+  margin-left: 10%;
+}
+
+.mediumLabel {
+  float: left;
+  /*margin-left: 20%;*/
+}
+
+.largeLabel {
+  float: right;
+  margin-left: 10%;
+}
+
+#divider {
+  height: 550px;
+  width: .1%;
+  background-color: rgb(40,40,40);;
+}
+.divider1 {
+  float: left;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+.divider2 {
+  float:right;
+  margin-right:45%;
+  margin-top: 5%;
+}
+/*.images{*/
+/*    position: relative;*/
+/*    top: 250px;*/
+/*    left: 50px;*/
+    /*width: 100%;*/
+    /*height: 400px;*/
+    /*background-color:white;*/
+/*}*/
+
+/*.withScale{*/
+/*    position: relative;*/
+/*    top: 580px;*/
+/*    left: 50px;*/
+/*    width: 100%;*/
+/*    height: 500px;*/
+/*    background-color:black;*/
+/*    float: none;*/
+/*    margin: 0px;*/
+/*}*/
+
+button {
+    position: relative;
+    top: 50px;
+    /*align-content: flex-start;*/
+    background-color: rgb(40,40,40);
+    border: none;
+    border-radius: 10px;
+    color: rgb(200,200,200);
+    padding: 8px;
+    font-family:  georgia, garamond, serif;
+    font-size: 12px;
+    text-align: center;
+    outline: none;
+}
+
+
+.small{
+    /*margin-left: 20px;*/
+    position: absolute;
+    text-align: center;
+    left: 3%;
+    width:20%;
+    /*height: 200px;*/
+    bottom: 100px;
+}
+
+.medium{
+    position: absolute;
+    text-align: center;
+    left: 31%;
+    width:20%;
+    bottom: 100px;
+    border-right-width: 1px;
+    border-right-color: grey;
+}
+
+.large{
+    position: absolute;
+    text-align: center;
+    left: 61%;
+    width: 20%;
+    bottom: 100px;
+}
+
+.scaled {
+  position: relative;
+  top:800px;
+  width: 100%;
+  height: 600px;
+  background-color:black;
+  
+}
+
+.mainSmallImage, .mainMediumImage, .mainLargeImage {
+    display: inline-block;
+    position:relative;
+    align-content: center;
+    bottom: 5%;
+    left: 30px;
+}
+
+.scaleBarContainer {
+    position: absolute;
+    text-align: center;
+    left: 660px;
+    width: 50px;
+    bottom: 105px;
+}
+
+
+.scaleBar {
+    display: inline-block;
+    position:relative;
+    align-content: center;
+    background-color: #C4A479;
+    bottom: 5%;
+    left: 50px;
+    width:2px;
+    height: 501px;
+    
+}
+
+.scaleLabel {
+  float: left;
+  /*margin-left:100px;*/
+  /*margin-bottom:400px;*/
+  /*padding-left:100px;*/
+  color: #C4A479;
+  font-family:  georgia, garamond, serif;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+/*Quantiative Viz styles*/
+
+/*.quant {*/
+/*    position: absolute;*/
+/*    height: 1600px;*/
+/*    width: 100%;*/
+/*    top: 1950px;*/
+/*    background-color: pink;*/
+    /*background-color: #EBE7D2;*/
+/*}*/
+
+/*#scatterplot {*/
+/*  margin-top: 50px;*/
+/*}*/
+
+/*.charttitle {*/
+/*  font-family: georgia, garamond, serif;*/
+/*  font-size: 16px;*/
+/*  font-weight: bold;*/
+/*  color: rgb(200,200,200);*/
+/*}*/
+
+/*.axis {*/
+/*  color: rgb(200,200,200);*/
+/*  font-family: georgia, garamond, serif;*/
+/*  font-size: 13px;*/
+/*}*/
+
+/*.labels {*/
+/*  color: rgb(97, 87, 57);*/
+/*  font-family: georgia, garamond, serif;*/
+/*  font-size: 13px;*/
+/*  font-weight: bold;*/
+/*}*/
+
+/*.legend {*/
+/*  position: fixed;*/
+/*}*/
+
+/*.legendMen {*/
+/*  height: 10px;*/
+/*  width: 10px;*/
+/*  background-color: Tan;*/
+/*  border-radius: 50px;*/
+/*  top: 113px;*/
+/*  left: 1100px;*/
+/*  position: absolute;*/
+/*}*/
+
+/*.legendWomen {*/
+/*  height: 10px;*/
+/*  width: 10px;*/
+/*  background-color: OrangeRed;*/
+/*  opacity: .6;*/
+/*  border-radius: 50px;*/
+/*  top: 143px;*/
+/*  left: 1100px;*/
+/*  position: absolute;*/
+/*}*/
+
+/*.legendBoth {*/
+/*  height: 10px;*/
+/*  width: 10px;*/
+/*  background-color: Black;*/
+/*  opacity: .6;*/
+/*  border-radius: 50px;*/
+/*  top: 172px;*/
+/*  left: 1100px;*/
+/*  position: absolute;*/
+/*}*/
+
+/*.legendText {*/
+/*  color: rgb(97, 87, 57);*/
+/*  font-family: georgia, garamond, serif;*/
+/*  font-size: 13px;*/
+/*  top: 110px;*/
+/*  left: 1120px;*/
+/*  position: absolute;*/
+/*}*/
+
+/*http://bl.ocks.org/d3noob/a22c42db65eb00d4e369 */
+
+/*.tooltip {*/
+/*  position: absolute;*/
+/*  width: 20ch;*/
+/*  font-family: georgia, garamond, serif;*/
+/*  font-size: 12px;*/
+/*  background: WhiteSmoke;*/
+/*  border: 0px;*/
+/*  border-radius: 8px;*/
+/*  padding: 20px;*/
+/*  margin-left: 12px;*/
+/*  pointer-events: none;*/
+/*}*/
