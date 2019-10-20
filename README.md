@@ -43,30 +43,6 @@ let myImageLarge = document.querySelector(".mainLargeImage");
 console.log(myImageLarge);
 ```
 
-Create function to change element attributes onClick (example for small sculptures):
-
-```javascript
-function changeSmall(){
- imageIndex++;
-
- mainSmall.setAttribute("src", "resized_clipped_tranparent_png/" + smallSculptures[imageIndex].fileNamePNG);
- overviewSmall.setAttribute("src", "resized_clipped_tranparent_png/" + smallSculptures[imageIndex].fileNamePNG);
-
- mainSmall.style.height = baseHeight * smallSculptures[imageIndex].height + 'px';
- overviewSmall.style.maxWidth = overviewWidth;
- overviewSmall.style.height = 'auto';
-
- smallOverviewDescription
- .html(`<b>${smallSculptures[imageIndex].Title}</b> (${smallSculptures[imageIndex].endDate})<br/><br/><b>${smallSculptures[imageIndex].height} cm | ${(smallSculptures[imageIndex].height * 0.393701).toFixed(2)} inches</b><br/><br/>${smallSculptures[imageIndex].Medium}<br/><br/>${smallSculptures[imageIndex].Culture}`)
- .attr('class', 'sculptureDescriptionSmall');
-
-
- if (imageIndex > smallSculptures.length) {
-   imageIndex = 0;
- }
-}
-```
-
 ### Create sculpture height groups
 
 ```javascript
@@ -97,6 +73,26 @@ clippedSculptures.forEach(sculpture => {
 });
 ```
 
-### Map images to sculpture height
+Create function to change element attributes onClick & map height (example for small sculptures):
 
-## Styling
+```javascript
+function changeSmall(){
+ imageIndex++;
+
+ mainSmall.setAttribute("src", "resized_clipped_tranparent_png/" + smallSculptures[imageIndex].fileNamePNG);
+ overviewSmall.setAttribute("src", "resized_clipped_tranparent_png/" + smallSculptures[imageIndex].fileNamePNG);
+
+ mainSmall.style.height = baseHeight * smallSculptures[imageIndex].height + 'px';
+ overviewSmall.style.maxWidth = overviewWidth;
+ overviewSmall.style.height = 'auto';
+
+ smallOverviewDescription
+ .html(`<b>${smallSculptures[imageIndex].Title}</b> (${smallSculptures[imageIndex].endDate})<br/><br/><b>${smallSculptures[imageIndex].height} cm | ${(smallSculptures[imageIndex].height * 0.393701).toFixed(2)} inches</b><br/><br/>${smallSculptures[imageIndex].Medium}<br/><br/>${smallSculptures[imageIndex].Culture}`)
+ .attr('class', 'sculptureDescriptionSmall');
+
+
+ if (imageIndex > smallSculptures.length) {
+   imageIndex = 0;
+ }
+}
+```
