@@ -65,7 +65,7 @@ body {
     margin-bottom: 200px;
     top: 10px;
     height: 100px;
-    width: 1100px;
+    width: 1160px;
     color: #D4D3CB;
     font-family: georgia, garamond, serif;
     font-size: 11px;
@@ -73,12 +73,12 @@ body {
 
 .description1 {
   float:left;
-  width: 60%;
+  width: 55%;
 }
 .description2 {
     /*margin-top: 40px;*/
     height: 100px;
-    width: 35%;
+    width: 42%;
     color: #D4D3CB;
     font-family: georgia, garamond, serif;
     font-size: 11px;
@@ -92,9 +92,9 @@ body {
 }
 
 .section1 {
-    position: relative;
-    top: 0px;
-    left: 60px;
+    position: absolute;
+    top: 250px;
+    left: 50px;
     width:100%;
     height: 150px;
     /*background-color: grey;*/
@@ -102,9 +102,9 @@ body {
 }
 
 .section2 {
-    position: relative;
-    top: -150px;
-    left: -130px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
     width:100%;
     height: 150px;
     /*background-color: grey;*/
@@ -159,8 +159,6 @@ body {
     align-content: center;
     top: 10px;
     margin-top: 10px;
-    /*max-width: 100%;*/
-    /*max-height: 100%*/
 }
 
 
@@ -168,20 +166,22 @@ body {
   position: relative;
   width: 100%;
   height: 200px;
-  top: 1685px;
+  top: 1780px;
   background-color: black;
   margin: 0px;
   padding:0px;
   border-top-width: 3px;
   border-top-style: inset;
   border-top-color: white;
-  padding-top: 80px;
+  padding-top: 30px;
+  z-index: 999999;
 }
 
 .sculptureDescriptionSmall {
+    position: absolute;
     float:left;
-    margin-left:-35px;
-    margin-top:-50px;
+    margin-left:10%;
+    margin-top:5px;
     width:200px;
     color: white;
     font-family: georgia, garamond, serif;
@@ -191,9 +191,10 @@ body {
 }
 
 .sculptureDescriptionMed {
+    position: absolute;
     float: left;
-    margin-left: 130px;
-    margin-top: -50px;
+    margin-left: 33%;
+    margin-top: 5px;
     width: 200px;
     color: white;
     font-family: georgia, garamond, serif;
@@ -203,9 +204,10 @@ body {
 }
 
 .sculptureDescriptionLarge {
-    float: right;
-    margin-right: 100px;
-    margin-top: -50px;
+    position: absolute;
+    float: left;
+    margin-left: 60%;
+    margin-top: 5px;
     width: 200px;
     color: white;
     font-family: georgia, garamond, serif;
@@ -228,7 +230,6 @@ body {
 
 .mediumLabel {
   float: left;
-  /*margin-left: 20%;*/
 }
 
 .largeLabel {
@@ -252,6 +253,7 @@ body {
   margin-right:45%;
   margin-top: 5%;
 }
+
 /*.images{*/
 /*    position: relative;*/
 /*    top: 250px;*/
@@ -318,9 +320,9 @@ button {
 
 .scaled {
   position: relative;
-  top:800px;
+  top:850px;
   width: 100%;
-  height: 600px;
+  height: 750px;
   background-color:black;
   
 }
@@ -334,9 +336,10 @@ button {
 }
 
 .scaleBarContainer {
-    position: absolute;
+    float: left;
     text-align: center;
-    left: 660px;
+    margin-left: 55%;
+    margin-top: 80px;
     width: 50px;
     bottom: 105px;
 }
@@ -346,9 +349,9 @@ button {
     display: inline-block;
     position:relative;
     align-content: center;
-    background-color: #C4A479;
+    background-color: #473C2C;
     bottom: 5%;
-    left: 50px;
+    /*margin-left: 5%;*/
     width:2px;
     height: 501px;
     
@@ -365,7 +368,14 @@ button {
 }
 
 
-
+.footer {
+    position: absolute;
+    top: 1000px;
+    width: 100%;
+    height: 110px;
+    background-color: rgb(15,15,15);
+    padding: 40px;
+}
 
 
 
