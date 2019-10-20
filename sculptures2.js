@@ -4,7 +4,7 @@
   "finalClippedFileAndHeight.json"
  ).then(sculptures => {
 
-  
+
 // narrow down this to only sculptures that were clipped - figure out why this # is 1736, but there are only 1607 clipped images?
 let clippedSculptures = []
 
@@ -19,7 +19,7 @@ for (var i=0; i<sculptures.length; i++) {
 
 console.log(clippedSculptures.length);
 
-// create variables to hold sculptures of different sizes 
+// create variables to hold sculptures of different sizes
 let extraSmallSculptures = [];
 let smallSculptures = [];
 let mediumSculptures = [];
@@ -77,7 +77,7 @@ console.log(extraLargeSculptures.length);
 
 
 // var myImage = document.getElementById("mainImage");
-// scaled images 
+// scaled images
 let mainSmall = document.querySelector(".mainSmallImage");
 console.log(mainSmall);
 
@@ -88,7 +88,7 @@ let myImageLarge = document.querySelector(".mainLargeImage");
 console.log(myImageLarge);
 
 
-// overview images without scale 
+// overview images without scale
 let overviewSmall = document.querySelector(".overviewSmallImage");
 console.log(overviewSmall);
 
@@ -98,7 +98,7 @@ console.log(overviewMedium);
 let overviewLarge = document.querySelector(".overviewLargeImage");
 console.log(overviewLarge);
 
- 
+
 let imageIndex = 1;
 let baseHeight = 3;
 let overviewWidth = '180px'
@@ -112,13 +112,13 @@ var smallOverviewDescription = d3.select('.sculptureDescriptionSmall')
    .attr('width', odW)
    .attr('height', odH)
    .append('g');
-   
+
 var mediumOverviewDescription = d3.select('.sculptureDescriptionMed')
  .append('mediumOverviewDescription')
    .attr('width', odW)
    .attr('height', odH)
    .append('g');
-   
+
 var largeOverviewDescription = d3.select('.sculptureDescriptionLarge')
  .append('largeOverviewDescription')
    .attr('width', odW)
@@ -127,15 +127,15 @@ var largeOverviewDescription = d3.select('.sculptureDescriptionLarge')
 
 function changeSmall(){
  imageIndex++;
- 
+
  mainSmall.setAttribute("src", "resized_clipped_tranparent_png/" + smallSculptures[imageIndex].fileNamePNG);
  overviewSmall.setAttribute("src", "resized_clipped_tranparent_png/" + smallSculptures[imageIndex].fileNamePNG);
- 
+
  mainSmall.style.height = baseHeight * smallSculptures[imageIndex].height + 'px';
  // mainSmall.style.height = baseHeight * smallSculptures[imageIndex].height + '%'; //safari
  overviewSmall.style.maxWidth = overviewWidth;
  overviewSmall.style.height = 'auto';
- 
+
  smallOverviewDescription
  .html(`<b>${smallSculptures[imageIndex].Title}</b> (${smallSculptures[imageIndex].endDate})<br/><br/><b>${smallSculptures[imageIndex].height} cm | ${(smallSculptures[imageIndex].height * 0.393701).toFixed(2)} inches</b><br/><br/>${smallSculptures[imageIndex].Medium}<br/><br/>${smallSculptures[imageIndex].Culture}`)
  .attr('class', 'sculptureDescriptionSmall');
@@ -153,12 +153,12 @@ window.changeSmall = changeSmall;
 
 
 function changeMedium(){
- 
+
  imageIndex++;
- 
+
  myImageMedium.setAttribute("src", "resized_clipped_tranparent_png/" + mediumSculptures[imageIndex].fileNamePNG);
  overviewMedium.setAttribute("src", "resized_clipped_tranparent_png/" + mediumSculptures[imageIndex].fileNamePNG);
- 
+
 
  myImageMedium.style.height = baseHeight *mediumSculptures[imageIndex].height + 'px';
  // myImageMedium.style.height = baseHeight *mediumSculptures[imageIndex].height + '%'; //safari
@@ -180,13 +180,13 @@ mediumOverviewDescription
 window.changeMedium = changeMedium;
 
 function changeLarge(){
- 
+
  imageIndex++;
- 
+
  myImageLarge.setAttribute("src", "resized_clipped_tranparent_png/" + largeSculptures[imageIndex].fileNamePNG);
  overviewLarge.setAttribute("src", "resized_clipped_tranparent_png/" + largeSculptures[imageIndex].fileNamePNG);
- 
- 
+
+
  console.log(largeSculptures[imageIndex].height)
  myImageLarge.style.height = baseHeight * largeSculptures[imageIndex].height + 'px';
  // myImageLarge.style.height = baseHeight * largeSculptures[imageIndex].height + '%'; //works as % in safari, not chrome
@@ -205,8 +205,8 @@ largeOverviewDescription
 }
 
 window.changeLarge = changeLarge;
- 
- 
+
+
 changeSmall();
 changeMedium();
 changeLarge();
@@ -215,7 +215,7 @@ changeLarge();
 // let userFeet = document.querySelector("#feet");
 // let userInches = document.querySelector("#inches");
 
-// let userHeight = (userFeet * 30.48) + (userInches * 2.54) 
+// let userHeight = (userFeet * 30.48) + (userInches * 2.54)
 
 // console.log(userHeight);
 
@@ -410,7 +410,7 @@ changeLarge();
 //   //   d3.max([0, d3.max(sculpturesHeightGenderDate, function (d) { return d.endDate })])
 //   //  ])
 //   //  .range([0, plotWidth])
-   
+
 //    var xScale = d3.scalePow()
 //   .exponent(0.5)
 //   .domain([
@@ -457,7 +457,7 @@ changeLarge();
 //      .duration(100)
 //      .attr('r', 10)
 //      .attr('stroke', 'black');
-    
+
 //     div.html(`<b>Title:</b> ${d.Title}<br/><br/><b>Medium:</b> ${d.Medium}<br/><br/><b>Height:</b> ${d.height} cm<br/><br/><b>Date:</b> ${d.endDate}<br/><br/><b>Culture:</b> ${d.Culture}<br/><br/><b>Department:</b> ${d.Department}`)
 //      .style("opacity", 1)
 //      .style("left", (d3.event.pageX) + "px")
@@ -560,13 +560,13 @@ changeLarge();
 
 // // fs.readFile('clippedFileAndHeight.json', (error, data) => {
 // //   if (error) throw error;
- 
- 
+
+
 // //   var sculptures = data;
 // //   allSculptures = JSON.parse(sculptures);
 
 
-  
+
 // // // narrow down this to only sculptures that were clipped - figure out why this # is 1736, but there are only 1607 clipped images?
 // // var clippedSculptures = []
 // // allSculptures.forEach(sculpture => {
@@ -577,7 +577,7 @@ changeLarge();
 
 // // console.log(clippedSculptures.length);
 
-// // // create variables to hold sculptures of different sizes 
+// // // create variables to hold sculptures of different sizes
 // // var extraSmallSculptures = [];
 // // var smallSculptures = [];
 // // var mediumSculptures = [];
@@ -640,13 +640,13 @@ changeLarge();
 // // var myImageLarge = document.querySelector("#mainLargeImage");
 // // console.log(myImageLarge);
 
- 
+
 // // var imageIndex = 1;
 
 // // function changeImageSmall(){
 // //  myImageSmall.setAttribute("src", "resized_clipped_transparent_png/" + smallSculptures[imageIndex].fileName);
 // //  imageIndex++;
- 
+
 // //  myImageSmall.style.height = 30 * smallSculptures[imageIndex].height;
 
 // //  if (imageIndex > smallSculptures.length - 1) {
@@ -657,7 +657,7 @@ changeLarge();
 // // function changeImageMedium(){
 // //  myImageMedium.setAttribute("src", "resized_clipped_transparent_png/" + mediumSculptures[imageIndex].fileName);
 // //  imageIndex++;
- 
+
 // //  myImageMedium.style.height = 30 * mediumSculptures[imageIndex].height;
 
 // //  if (imageIndex > mediumSculptures.length - 1) {
@@ -668,7 +668,7 @@ changeLarge();
 // // function changeImagelarge(){
 // //  myImageLarge.setAttribute("src", "resized_clipped_transparent_png/" + largeSculptures[imageIndex].fileName);
 // //  imageIndex++;
- 
+
 // //  myImageLarge.style.height = 30 * largeSculptures[imageIndex].height;
 
 // //  if (imageIndex > largeSculptures.length - 1) {
@@ -712,7 +712,7 @@ changeLarge();
 
 
 // // imageObjects.forEach(image => {
- 
+
 // // var small = document.querySelector(".small img");
 // // small.style.height = imageObjects.height;
 // // small.style.width = imageObjects.width;
@@ -726,4 +726,3 @@ changeLarge();
 // // large.style.width = imageObjects.width;
 
 // // });
-

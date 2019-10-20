@@ -15,20 +15,6 @@ body {
 }
 
 
-/*.container {*/
-/*  position: fixed;*/
-/*  z-index: 9999;*/
-/*}*/
-
-/*.rectangle {*/
-/*  height: 35px;*/
-/*  width: 1300px;*/
-/*  background-color: black;*/
-/*  position: absolute;*/
-
-/*}*/
-
-
 .met {
   height: .2%;
   width: 2%;
@@ -116,7 +102,7 @@ body {
   font-family: georgia, garamond, serif;
   font-size: 11.5px;
   line-height: 14.5px;
-  
+
 }
 
 .titleLarge1 {
@@ -324,7 +310,7 @@ button {
   width: 100%;
   height: 750px;
   background-color:black;
-  
+
 }
 
 .mainSmallImage, .mainMediumImage, .mainLargeImage {
@@ -354,7 +340,7 @@ button {
     /*margin-left: 5%;*/
     width:2px;
     height: 501px;
-    
+
 }
 
 .scaleLabel {
