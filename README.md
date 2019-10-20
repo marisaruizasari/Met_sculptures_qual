@@ -1,8 +1,10 @@
-Met Sculptures Qualitative Project
+# Met Sculptures Qualitative Project Documentation
+Parsons Masters in Data Visualization | Major Studio 1
 
 ![header](readMeImages/exampleHeader.png)
 ![width](readMeImages/exampleConstWidth.png)
 ![height](readMeImages/exampleRelHeight.png)
+[See interactive visualization here](https://marisaruizasari.github.io/Met_sculptures_qual/)
 
 ## Step 1: Object IDs from Quantitative Project & MET csv
 
@@ -15,6 +17,7 @@ Created a new json file (finalyClippedFileAndHeight.json) that had all sculpture
 ## Step 4: Clip images using OpenCV
 
 See bgrmv.ipynb, ran using jupyter notebook
+![OpenCV](readMeImages/OpenCV)
 
 ## Step 5: Clean & manually crop images
 
