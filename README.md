@@ -17,7 +17,7 @@ Created a new json file (finalyClippedFileAndHeight.json) that had all sculpture
 ## Step 4: Clip images using OpenCV
 
 See bgrmv.ipynb, ran using jupyter notebook
-![OpenCV](readMeImages/OpenCV)
+![OpenCV](readMeImages/OpenCV.png)
 
 ## Step 5: Clean & manually crop images
 
